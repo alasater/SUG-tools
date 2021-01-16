@@ -85,6 +85,6 @@ def SUGbackDelete(user_email,user_password,signupname,cutoff_date):
 user_email = ""
 user_pword = ""
 signupname = "Mako"
-cutoff_date = datetime.date(2021,1,15) # Y, M, D
+cutoff_date = datetime.date.today()-datetime.timedelta(1) # yesterday
 
 SUGbackDelete(user_email,user_pword,signupname,cutoff_date)
